@@ -81,8 +81,12 @@ class Author{
     }
 
     public function displayBooks(){
-        $allBooks = implode(", ", $this->books);
-        return $allBooks;
+        $result = "Livres de $this<br><ul>";
+        foreach ($this->books as $book) {
+            $result .= "<li>$book</li>";
+        }
+        $result .= "</ul>";
+        return $result;
     }
 
     public function getAge(){
