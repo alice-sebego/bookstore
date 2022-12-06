@@ -30,6 +30,14 @@ class Book{
         $this->parution = $parution;
     }
 
+    public function getPagesNb(){
+        return $this->pagesNb;
+    }
+
+    public function setPagesNb($pagesNb){
+        $this->pagesNb = $pagesNb;
+    }
+
     public function getPrice(){
         return $this->price;
     }
