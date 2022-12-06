@@ -89,6 +89,15 @@ class Author{
         return $result;
     }
 
+    public function getTotalPriceOfBooks(){
+        $result = 0;
+        foreach ($this->books as $book) {
+            var_dump($book->getPrice());
+            //$result += (int)$book->getPrice();
+        }
+        //return "Le prix total de l'ensemble de la bibliographie est de $result €";
+    }
+
     public function getAge(){
         // Soluc' Zamina    
         // $bd = $this->bday;

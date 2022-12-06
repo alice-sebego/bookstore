@@ -13,9 +13,13 @@
   <h1>Livre</h1>
 
   <?php
-    // Instructions
-    include_once "Book.php";
-    include_once "Author.php";
+    // -- Instructions --
+
+    // Include all classes that spl_autoload_register has found
+    spl_autoload_register(function ($class_name){
+      include $class_name. ".php";
+    });
+
     $author1 = new Author("stephen", "king", "male", "1985-12-25");
     echo $author1->getLastname()." ";
     $author1->setFirstname("Burger");
@@ -30,6 +34,10 @@
     $shining = new Book("Shining", 1977, 958, 49.99, $author1);
     print("<pre>".print_r($plague666,true)."</pre>");
     echo $author1->displayBooks();
+    echo "<br>";
+    //echo $salem->getPrice();
+    //var_dump($salem->getPrice());
+    //echo $author1->getTotalPriceOfBooks();
     ?>
 </body>
 
