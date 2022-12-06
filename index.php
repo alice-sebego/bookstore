@@ -5,13 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="public/css/style.css">
   <title>Bookstore POO</title>
 </head>
 
 <body>
-  <h1>Livre</h1>
-
+  <header>
+    <div class="logo">
+      <img src="assets/images/library_books.svg" alt="Logo Book">
+    </div>
+    <h1>My Bookstore</h1>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="container">
+        <div class="description">
+          <h2>Introduction</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam id error a rerum sint illo ducimus ad sit repellat quae, magnam impedit, accusantium deserunt fugiat nesciunt quos totam nihil cumque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam id error a rerum sint illo ducimus ad sit repellat quae, magnam impedit, accusantium deserunt fugiat nesciunt quos totam nihil cumque.</p>
+        </div>
+        <div class="illustration">
+          <img src="https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bookstore">
+        </div>
+      </div>
+    </section>
   <?php
     // -- Instructions --
 
@@ -20,23 +37,23 @@
       include $class_name. ".php";
     });
 
-    $author1 = new Author("stephen", "king", "male", "1985-12-25");
+    $author1 = new Author("Stephen", "King", "male", "1947-12-25");
     echo $author1->getLastname()." ";
-    $author1->setFirstname("Burger");
     echo $author1->getFirstname();
     echo "<br>";
 
-    $plague666 = new Book("Plague 666", 1999, 2000, 49.99, $author1);
+    $shawshankRedemption = new Book("Rita Hayworth and Shawshank Redemption", 1982, 2000, 49.99, $author1);
     echo $author1;
-    echo $plague666;
     $salem = new Book("Salem", 1975, 456, 39.99, $author1);
     echo "<br>";
     $shining = new Book("Shining", 1977, 958, 49.99, $author1);
-    print("<pre>".print_r($plague666,true)."</pre>");
+    print("<pre>".print_r($shawshankRedemption,true)."</pre>");
     echo $author1->displayBooks();
     echo "<br>";
     echo $author1->getTotalPriceOfBooks();
     ?>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
