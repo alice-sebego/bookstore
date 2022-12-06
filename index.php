@@ -35,9 +35,7 @@
     print("<pre>".print_r($plague666,true)."</pre>");
     echo $author1->displayBooks();
     echo "<br>";
-    //echo $salem->getPrice();
-    //var_dump($salem->getPrice());
-    //echo $author1->getTotalPriceOfBooks();
+    echo $author1->getTotalPriceOfBooks();
     ?>
 </body>
 
