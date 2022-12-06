@@ -19,3 +19,11 @@ Ajouter les getters et setters à ces deux classes (manuellement !).
 
 - Créer un auteur et afficher ses informations 
 - Créer un livre et afficher ses informations
+
+## Partie 2 :
+
+Ajouter une méthode getAge() à la classe Auteur ainsi qu'une fonction \_\_toString() permettant d'afficher le nom, prénom et âge de l'auteur.
+
+Ajouter une méthode \_\_toString() à la classe Livre permettant de renvoyer le titre, l'année de sortie, le nombre de pages et le prix.
+
+- Constater les changements
