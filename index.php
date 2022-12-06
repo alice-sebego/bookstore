@@ -14,6 +14,15 @@
 
   <?php
     // Instructions
+    include_once "Author.php";
+    include_once "Book.php";
+    $author1 = new Author("stephen", "king", "male", "1985-12-25");
+    echo $author1->getLastname();
+    $author1->setFirstname("Burger");
+    echo $author1->getFirstname();
+
+    $plague666 = new Book("Plague 666", 1999, 2000, 49.99);
+    echo $author1;
     ?>
 </body>
 

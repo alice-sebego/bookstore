@@ -2,11 +2,11 @@
 class Book{
 
     private string $title;
-    private string $parution;
+    private int $parution;
     private int $pagesNb;
     private float $price;
 
-    public function __construct($title, $parution, $pagesNb, $price)
+    public function __construct(string $title, int $parution, int $pagesNb, float $price)
     {
         $this->title = $title;
         $this->parution = $parution;
