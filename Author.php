@@ -13,7 +13,7 @@ class Author{
       $this->lastname = $lastname;
       $this->gender = $gender;
       $this->birthday = new DateTime($birthday);
-      $this->book = [];
+      $this->books = [];
     }
 
     public function getFirstname(){
@@ -48,13 +48,14 @@ class Author{
         $this->birthday = $birthday;
     }
 
-    public function getBooks(){
-        return $this->books;
+    public function displayBooks(){
+        $allBooks = implode(", ", $this->books);
+        return $allBooks;
     }
 
-    public function setBooks($books){
-        $this->books = $books;
-    }
+    // public function setBooks($books){
+    //     $this->books = $books;
+    // }
 
     public function getAge(){
         // Soluc' Zamina    
@@ -67,7 +68,12 @@ class Author{
 
     public function __toString()
     {
-        return "<strong>$this->firstname $this->lastname </strong>" . "( " . $this->getAge() . " ans)" ;
+        return "<strong>$this->firstname $this->lastname </strong>" . "( " . $this->getAge() . " ans)<br>" ;
     }
+
+    public function addBook(string $book){
+        $this->books[] = $book;
+    }
+
 }
 ?>
