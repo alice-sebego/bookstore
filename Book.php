@@ -4,7 +4,7 @@ class Book{
     private string $title;
     private string $parution;
     private int $pagesNb;
-    private int $price;
+    private float $price;
 
     public function __construct($title, $parution, $pagesNb, $price)
     {
