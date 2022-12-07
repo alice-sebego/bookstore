@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="public/css/style.css">
   <title>Bookstore POO</title>
 </head>
-
 <body>
   <header>
     <div class="logo">
@@ -29,6 +27,11 @@
         </div>
       </div>
     </section>
+    <section class="bookstores">
+      <div class="container">
+
+      </div>
+    </section>
   <?php
     // -- Instructions --
 
@@ -38,19 +41,16 @@
     });
 
     $author1 = new Author("Stephen", "King", "male", "1947-12-25");
-    echo $author1->getLastname()." ";
-    echo $author1->getFirstname();
-    echo "<br>";
-
     $shawshankRedemption = new Book("Rita Hayworth and Shawshank Redemption", 1982, 2000, 49.99, $author1);
-    echo $author1;
     $salem = new Book("Salem", 1975, 456, 39.99, $author1);
-    echo "<br>";
     $shining = new Book("Shining", 1977, 958, 49.99, $author1);
-    print("<pre>".print_r($shawshankRedemption,true)."</pre>");
+
+    echo $author1;
+    echo "<br>";
     echo $author1->displayBooks();
     echo "<br>";
     echo $author1->getTotalPriceOfBooks();
+    //print("<pre>".print_r($shawshankRedemption,true)."</pre>");
     ?>
     </main>
     <footer></footer>
