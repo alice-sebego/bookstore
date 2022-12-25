@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;400;600&display=swap");
+* ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+/* COLORS PALETTE */
+body h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffb703;
+  left: -10px;
+  z-index: -1;
+  bottom: -30px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffb703;
+}
+header h1 {
+  font-family: "Roboto Slab", serif;
+  color: #023047;
+}
+
+main {
+  font-family: "Montserrat", sans-serif;
+}
+main .intro .container {
+  display: flex;
+}
+main .intro .container .description {
+  width: 50%;
+  padding: 20px;
+}
+main .intro .container .description h2, main .intro .container .description h3 {
+  font-family: "Roboto Slab", serif;
+  color: #023047;
+}
+main .intro .container .description .cta {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #fb8500;
+  border-radius: 25px;
+  color: white;
+  transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+main .intro .container .description .cta:hover {
+  background-color: #ffb703;
+  color: ligthen(#8ecae6, 50%);
+}
+main .intro .container .illustration {
+  width: 50%;
+  border-radius: 8px;
+}
+main .intro .container .illustration img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

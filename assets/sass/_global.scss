@@ -1,0 +1,16 @@
+body {
+  h2 {
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $orange-light;
+      left: -10px;
+      z-index: -1;
+      bottom: -30px;
+    }
+  }
+}
