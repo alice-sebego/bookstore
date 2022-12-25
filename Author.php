@@ -81,7 +81,7 @@ class Author{
     }
 
     public function displayBooks(){
-        $result = "Livres de $this<br><ul>";
+        $result = "Livres de $this(" . $this->getAge() . " ans)<ul>";
         foreach ($this->books as $book) {
             $result .= "<li>$book</li>";
         }
@@ -108,7 +108,7 @@ class Author{
 
     public function __toString()
     {
-        return "<strong>$this->firstname $this->lastname </strong>" . "( " . $this->getAge() . " ans)<br>" ;
+        return "<strong>$this->firstname $this->lastname </strong><br>" ;
     }
 
     public function addBook(Book $book){
