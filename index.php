@@ -20,7 +20,18 @@
         <div class="description">
           <h2>Introduction</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam id error a rerum sint illo ducimus ad sit repellat quae, magnam impedit, accusantium deserunt fugiat nesciunt quos totam nihil cumque.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam id error a rerum sint illo ducimus ad sit repellat quae, magnam impedit, accusantium deserunt fugiat nesciunt quos totam nihil cumque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam id error a rerum sint illo ducimus ad sit repellat quae.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <h3>Advantages</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          <ul>
+            <li class="advantage">Lorem ipsum</li>
+            <li class="advantage">Lorem ipsum</li>
+            <li class="advantage">Lorem ipsum</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="cta">Go lorem ipsum</a>
+
         </div>
         <div class="illustration">
           <img src="https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bookstore">

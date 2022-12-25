@@ -50,9 +50,22 @@ main .intro .container .description {
   width: 50%;
   padding: 20px;
 }
-main .intro .container .description h2 {
+main .intro .container .description h2, main .intro .container .description h3 {
   font-family: "Roboto Slab", serif;
   color: #023047;
+}
+main .intro .container .description .cta {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #fb8500;
+  border-radius: 25px;
+  color: white;
+  transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+main .intro .container .description .cta:hover {
+  background-color: #ffb703;
+  color: ligthen(#8ecae6, 50%);
 }
 main .intro .container .illustration {
   width: 50%;
